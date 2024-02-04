@@ -13,3 +13,10 @@ test.only('Get the product name from list of products', async({page})=>{
     //Assert whether radio button is selected
     await expect(page.locator("span.radiotextsty").last()).toBeChecked();
 });
+
+test('Select a Radio button', async({page})=>{
+
+    await page.goto("https://practice-automation.com/form-fields/");
+    await page.locator("#color1").click();
+    await expect(page.locator("#color1")).toBeChecked();
+})
