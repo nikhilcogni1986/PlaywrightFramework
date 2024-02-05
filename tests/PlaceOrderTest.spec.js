@@ -62,4 +62,20 @@ test('Place an order by adding a product', async ({ page }) => {
     await expect(page.locator(".hero-primary")).toHaveText(" Thankyou for the order. ");
     const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
     console.log(orderId);
+
+    //click on orders history page
+    await page.locator("label[routerlink*='dashboard/myorders']").click();
+    await page.locator("tbody").waitFor();
+
+    let rows = await page.locator("tbody tr").count();
+
+    //Iterate over the rows to extract the orderID
+    for(let i=0; i<rows; i++)
+    {
+        if(orderId.includes(await page.locator("tbody tr").nth(i).locator("th").textContent()))
+        {
+            await page.locator("tbody tr").nth(i).locator('button').first().click();
+            break;
+        }
+    }
 });
