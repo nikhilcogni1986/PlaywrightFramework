@@ -7,3 +7,4 @@ node_modules/
 *.xml
 *.class
 !/.idea/
+/tests/screenshot

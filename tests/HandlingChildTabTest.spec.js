@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test.only('Grab the email address from Child window', async({browser})=>{
+test('Grab the email address from Child window', async({browser})=>{
     const browserContext = await browser.newContext();
     const page = await browserContext.newPage();
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
@@ -22,7 +22,7 @@ test.only('Grab the email address from Child window', async({browser})=>{
     await page.locator("#signInBtn").click();
 });
 
-test.only('Grab the header text from child window', async({browser})=>{
+test('Grab the header text from child window', async({browser})=>{
     const browserContext = await browser.newContext();
     const page = await browserContext.newPage();
     await page.goto("https://practice-automation.com/window-operations/");
