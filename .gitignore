@@ -8,3 +8,5 @@ node_modules/
 *.class
 !/.idea/
 /tests/screenshot
+/my-allure-results
+/allure-report
