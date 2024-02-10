@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Place an order by adding a product', async ({ page }) => {
+test('@Reg Place an order by adding a product', async ({ page }) => {
 
     const email = "nikhilrao@test.com";
     const password = "Password1234";

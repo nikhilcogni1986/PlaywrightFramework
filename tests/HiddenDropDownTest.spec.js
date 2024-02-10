@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Launch browser using Browser context', async ({browser}) => {
+test('@Reg Launch browser using Browser context', async ({browser}) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

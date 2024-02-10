@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Launch Browser using Page fixture', async ({page}) => {
+test('@Reg Launch Browser using Page fixture', async ({page}) => {
    
     await page.goto("https://swisnl.github.io/jQuery-contextMenu/demo.html");
     await page.locator("span.context-menu-one.btn.btn-neutral").click({button:'right'});

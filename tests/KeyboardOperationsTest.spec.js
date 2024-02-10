@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Demo on keyboard operations', async ({page}) => {
+test('@Reg Demo on keyboard operations', async ({page}) => {
 
     await page.goto("https://gotranscript.com/text-compare");
     await page.locator('[name="text1"]').fill("Welcome to Automation");

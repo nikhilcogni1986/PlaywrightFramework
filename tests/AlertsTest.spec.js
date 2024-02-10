@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Handling of Alert', async ({page}) => {
+test('@Reg Handling of Alert', async ({page}) => {
     
     await page.goto("https://testautomationpractice.blogspot.com/");
     page.on('dialog', async (dialog) => {
@@ -11,7 +11,7 @@ test('Handling of Alert', async ({page}) => {
     await page.getByRole('button',{name:"Alert"}).click();
 });
 
-test('Handling of Confirmation Alert', async ({page}) => {
+test('@Reg Handling of Confirmation Alert', async ({page}) => {
     
     await page.goto("https://testautomationpractice.blogspot.com/");
     page.on('dialog', async (dialog) => {
@@ -24,7 +24,7 @@ test('Handling of Confirmation Alert', async ({page}) => {
     await page.getByRole('button',{name:"Confirm Box"}).click();
 });
 
-test('Handling of Prompt Alert', async ({page}) => {
+test('@Reg Handling of Prompt Alert', async ({page}) => {
     
     await page.goto("https://testautomationpractice.blogspot.com/");
     page.on('dialog', async (dialog) => {
@@ -36,4 +36,3 @@ test('Handling of Prompt Alert', async ({page}) => {
     })
     await page.getByRole('button',{name:"Prompt"}).click();
 });
-

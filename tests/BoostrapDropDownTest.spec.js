@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Select options from Boostrap Drop Down', async({page})=>{
+test('@Reg Select options from Boostrap Drop Down', async({page})=>{
 
     await page.goto("https://jquery-az.com/boots/demo.php?ex=63.0_2");
     await page.locator(".multiselect").click();

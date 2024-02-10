@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "AllTests": "npx playwright test",
+    "SanityTests":"npx playwright test --grep @Sanity",
+    "RegressionTests":"npx playwright test --grep @Reg"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

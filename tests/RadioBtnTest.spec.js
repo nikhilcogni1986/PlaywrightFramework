@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Get the product name from list of products', async({page})=>{
+test('@Reg Get the product name from list of products', async({page})=>{
 
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
     await page.locator("#username").fill("rahulshettyacademy");
@@ -14,7 +14,7 @@ test('Get the product name from list of products', async({page})=>{
     await expect(page.locator("span.radiotextsty").last()).toBeChecked();
 });
 
-test('Select a Radio button', async({page})=>{
+test('@Reg Select a Radio button', async({page})=>{
 
     await page.goto("https://practice-automation.com/form-fields/");
     await page.locator("#color1").click();

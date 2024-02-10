@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Demo on double click function', async ({page}) => {
+test('@Reg Demo on double click function', async ({page}) => {
 
     await page.goto("https://testautomationpractice.blogspot.com/");
     const btnCopy = page.locator("//button[normalize-space()='Copy Text']")

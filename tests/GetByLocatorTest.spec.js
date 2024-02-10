@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Demo on usage of GetBy locators', async ({page}) => {
+test('@Reg Demo on usage of GetBy locators', async ({page}) => {
     
     await page.goto("https://rahulshettyacademy.com/angularpractice/");
     await page.getByLabel("Check me out if you Love IceCreams!").click();

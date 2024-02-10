@@ -1,6 +1,6 @@
 import {test, expect, chromium} from '@playwright/test';
 
-test('Handling multiple windows', async ({page}) => 
+test('@Reg Handling multiple windows', async ({page}) => 
 {
    const browser = await chromium.launch();
    const context = await browser.newContext();
@@ -17,7 +17,7 @@ test('Handling multiple windows', async ({page}) =>
    
 });
 
-test('Handling multiple windows and switching between pages', async ({page}) => 
+test('@Reg Handling multiple windows and switching between pages', async ({page}) => 
 {
    const browser = await chromium.launch();
    const context = await browser.newContext();

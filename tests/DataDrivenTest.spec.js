@@ -5,7 +5,7 @@ test.describe('Login using different credentials', ()=>
 {
     for(const userCreds of testData)
     {
-        test(`Login into application for a ${userCreds.UserType}`, async({page})=>
+        test(`@Reg Login into application for a ${userCreds.UserType}`, async({page})=>
         {
             await page.goto("https://www.saucedemo.com/");
             

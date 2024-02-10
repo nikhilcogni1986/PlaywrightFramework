@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Select options from Multi Select Drop Down', async({page})=>{
+test('@Reg Select options from Multi Select Drop Down', async({page})=>{
 
     await page.goto("https://testautomationpractice.blogspot.com/");
     await page.locator("#colors").selectOption(['Red','Blue']);

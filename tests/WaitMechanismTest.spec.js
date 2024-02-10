@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Get the product name from list of products', async({page})=>{
+test('@Reg Get the product name from list of products', async({page})=>{
     await page.goto("https://rahulshettyacademy.com/client");
     await page.locator("#userEmail").fill("nikhilrao@test.com");
     await page.locator("#userPassword").fill("Password1234");
